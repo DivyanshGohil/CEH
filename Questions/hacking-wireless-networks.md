@@ -164,7 +164,7 @@ Explanation:
 - Access point theft
 - Beacon flood
 
-![image](Questions/image/wireless1.png)
+![image](image/wireless1.png)
 
 
 
@@ -195,7 +195,7 @@ Explanation:
 - **Eavesdropping**
 - Evil twin AP
 
-![image](Questions/image/wireless2.png)
+![image](image/wireless2.png)
 
 
 
