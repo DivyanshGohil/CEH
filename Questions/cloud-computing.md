@@ -216,17 +216,17 @@ Explanation:
 - Exposed bearer tokens in logs
 - Log rotation is not atomic
 
-![image](Questions/image/cloud1.png)
+![image](image/cloud1.png)
 
 
 
 ### In which of the following attacks does an attacker abuse cloud file synchronization services, such as Google Drive and DropBox, for data compromise, command and control, data exfiltration, and remote access?
 
 
-Cloudborne attack
-Cloud hopper attack
-Cloud cryptojacking
-**Man-in-the-cloud attack**
+- Cloudborne attack
+- Cloud hopper attack
+- Cloud cryptojacking
+- **Man-in-the-cloud attack**
 
 Explanation:
 
@@ -244,10 +244,10 @@ Explanation:
 ### Which of the following types of DNS attack involves registering an elapsed domain name?
 
 
-DNS poisoning
-**Domain snipping**
-Cybersquatting
-Domain hijacking
+- DNS poisoning
+- **Domain snipping**
+- Cybersquatting
+- Domain hijacking
 
 Explanation:
 
@@ -297,15 +297,15 @@ Other given weaknesses causes following threats:
 Explanation:
 
     
->Dump credentials: Extracts the credentials available with this host and prints them out to the console.
+>**Dump credentials**: Extracts the credentials available with this host and prints them out to the console.
 `$ nimbostratus dump-credentials`
     
->Dump permissions: Dumps all the permissions for the provided credentials.
+>**Dump permissions**: Dumps all the permissions for the provided credentials.
 `$ nimbostratus dump-permissions --access-key=... --secret-key=...`
     
->Dump instance metadata: Retrieves important information metadata of EC2 instances.`$ nimbostratus dump-ec2-metadata`
+>**Dump instance metadata**: Retrieves important information metadata of EC2 instances.`$ nimbostratus dump-ec2-metadata`
     
->Create new user: Create a new IAM user using existing credentials: `$ nimbostratus create-iam-user --access-key=... --secret-key=...`
+>**Create new user**: Create a new IAM user using existing credentials: `$ nimbostratus create-iam-user --access-key=... --secret-key=...`
 
 
 
@@ -344,16 +344,16 @@ Explanation:
 Explanation:
 
     
->Hetty: Hetty is an HTTP toolkit for security research. It provides the following 
+>**Hetty**: Hetty is an HTTP toolkit for security research. It provides the following 
 >- Machine-in-the-middle (MITM) HTTP proxy with logs and advanced 
 >- HTTP client for manually creating/editing requests and replaying proxied 
 >- Intercepting requests and responses for a manual review (edit, send/receive, and cancel)
     
->Azucar: The Azucar tool allows users to assess the overall security of an Azure environment. It is a multi-threaded plug-in-based security tool that can be used in Windows. Moreover, the script used in the tool does not affect the assets that are implemented in the Azure subscription.
+>**Azucar**: The Azucar tool allows users to assess the overall security of an Azure environment. It is a multi-threaded plug-in-based security tool that can be used in Windows. Moreover, the script used in the tool does not affect the assets that are implemented in the Azure subscription.
     
->bettercap: bettercap is a portable framework written in Go that allows security researchers, red teamers, and reverse engineers to perform reconnaissance and various attacks on Wi-Fi networks, Bluetooth low energy devices, wireless HID devices, and IPv4/IPv6 networks.
+>**bettercap**: bettercap is a portable framework written in Go that allows security researchers, red teamers, and reverse engineers to perform reconnaissance and various attacks on Wi-Fi networks, Bluetooth low energy devices, wireless HID devices, and IPv4/IPv6 networks.
     
->OWASP ZAP: Zed Attack Proxy (ZAP) is an integrated penetration testing tool for finding vulnerabilities in web applications. It offers automated scanners as well as a set of tools that allow users to find security vulnerabilities manually.
+>**OWASP ZAP**: Zed Attack Proxy (ZAP) is an integrated penetration testing tool for finding vulnerabilities in web applications. It offers automated scanners as well as a set of tools that allow users to find security vulnerabilities manually.
 
 
 
@@ -368,13 +368,13 @@ Explanation:
 Explanation:
 
     
->DroidSheep: The DroidSheep tool is used for session hijacking on Android devices connected to a common wireless network.
+>**DroidSheep**: The DroidSheep tool is used for session hijacking on Android devices connected to a common wireless network.
     
->CxSAST: Checkmarx CxSAST is a unique source-code analysis solution that provides tools for identifying, tracking, and repairing technical and logical flaws in source code, such as security vulnerabilities, compliance issues, and business logic problems.
+>**CxSAST**: Checkmarx CxSAST is a unique source-code analysis solution that provides tools for identifying, tracking, and repairing technical and logical flaws in source code, such as security vulnerabilities, compliance issues, and business logic problems.
     
->SkyArk: SkyArk contains two main scanning modules, AWStealth and AzureStealth. With the scanning results from SkyArk, attackers can discover the entities (users, groups, and roles) that have the most sensitive and risky permissions.
+>**SkyArk**: SkyArk contains two main scanning modules, AWStealth and AzureStealth. With the scanning results from SkyArk, attackers can discover the entities (users, groups, and roles) that have the most sensitive and risky permissions.
     
->Fiddler: Fiddler is used for performing web-application security tests such as the decryption of HTTPS traffic and manipulation of requests using an MITM decryption technique. Fiddler is a web debugging proxy that logs all HTTP(S) traffic between a computer and the Internet.
+>**Fiddler**: Fiddler is used for performing web-application security tests such as the decryption of HTTPS traffic and manipulation of requests using an MITM decryption technique. Fiddler is a web debugging proxy that logs all HTTP(S) traffic between a computer and the Internet.
 
 
 
