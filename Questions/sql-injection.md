@@ -7,7 +7,7 @@
 - Remote code execution
 - Compromised availability of data
 
-> Explanation:
+Explanation:
 
 > **Authorization Bypass**: Using this attack, an attacker alters authorization information stored in the database by exploiting an SQL injection vulnerability.
 
@@ -27,7 +27,7 @@
 - In-band SQL injection
 - Union SQL injection
 
-> Explanation:
+Explanation:
 
     
 > **Union SQL Injection**: In a UNION SQL injection, an attacker combines a forged query with a query requested by the user using a UNION clause.
@@ -49,12 +49,12 @@
 - Illegal/logically incorrect query
 - UNION SQL injection
 
->Explanation:
+Explanation:
 
     
 > In a **UNION SQL injection**, an attacker uses a UNION clause to append a malicious query to the requested query. 
 
-> An attacker may gain knowledge by injecting illegal/logically incorrect requests such as injectable parameters, data types, names of tables, and so on.
+> An attacker may gain knowledge by injecting **illegal/logically incorrect requests** such as injectable parameters, data types, names of tables, and so on.
    
 > In a **tautology-based SQL injection** attack, an attacker uses a conditional OR clause in such a way that the condition of the WHERE clause will always be true.
     
@@ -70,9 +70,9 @@
 - In-line comment
 - UNION SQL injection
 
->Explanation:
+Explanation:
 
-> Attackers simplify an SQL injection attack by integrating multiple vulnerable inputs into a single query using in-line comments.
+> Attackers simplify an SQL injection attack by integrating multiple vulnerable inputs into a single query using **in-line comments**.
     
 > In a **Piggybacked SQL injection attack**, an attacker injects an additional malicious query to the original query. The original query remains unmodified, and the attacker’s query is piggybacked on the original query.
     
@@ -102,16 +102,16 @@
 - Parameter tampering
 - **Determining a SELECT query structure**
 
->Explanation:
+Explanation:
 
     
 >Determining a SELECT Query Structure: Using which, attackers try to replicate an error free navigation by the injection of simple input such as ' and '1' = '1 Or' and '1' = '2 . To obtain the original query structure, the attacker forces the application to generate application errors that reveal information such as table names, column names, and data types.
     
 >Determining Database Engine Type: Determining the database engine type is fundamental to proceeding with the injection attack. ODBC error messages reveal the type of database engine used or enable an attacker to guess and determine which type of database engine might have been used in the application.
     
->Parameter Tampering: An attacker can tamper with HTTP GET and POST requests to generate errors. The Burp Suite or Tamper Chrome utilities can manipulate GET and POST requests.
+>**Parameter Tampering**: An attacker can tamper with HTTP GET and POST requests to generate errors. The Burp Suite or Tamper Chrome utilities can manipulate GET and POST requests.
     
->Type Mismatch: Attackers try to insert strings into numeric fields; the error messages will show the data that could not get converted.
+>**Type Mismatch**: Attackers try to insert strings into numeric fields; the error messages will show the data that could not get converted.
 
 
 
@@ -123,16 +123,16 @@
 - **Truncation**
 - SQL modification
 
-> Explanation:
+Explanation:
 
     
-> Detecting Input Sanitization: testers use right square bracket (the ] character) as the input data to identify instances where the user input is used as a part of an SQL identifier without any input sanitization.
+> **Detecting Input Sanitization**: testers use right square bracket (the ] character) as the input data to identify instances where the user input is used as a part of an SQL identifier without any input sanitization.
     
-> Detecting SQL Modification: Testers send long strings of single quote characters (or right square brackets or double quotes). These max out the return values from REPLACE and QUOTENAME functions and might truncate the command variable used to hold the SQL statement.
+> **Detecting SQL Modification**: Testers send long strings of single quote characters (or right square brackets or double quotes). These max out the return values from REPLACE and QUOTENAME functions and might truncate the command variable used to hold the SQL statement.
     
-> Detecting SQL Injection Issues: Testers send single quotes as input data to identify instances where the user input is not sanitized. Send double quotes as input data to identify instances where the user input is not sanitized.
+> **Detecting SQL Injection Issues**: Testers send single quotes as input data to identify instances where the user input is not sanitized. Send double quotes as input data to identify instances where the user input is not sanitized.
     
-> Detecting Truncation Issues: Testers send long strings of junk data, similar to strings to detect buffer overruns; this action might throw SQL errors on the page.
+> **Detecting Truncation Issues**: Testers send long strings of junk data, similar to strings to detect buffer overruns; this action might throw SQL errors on the page.
 
 
 ### In which of the following techniques does an attacker use logical requests such as AND/OR to bypass a firewall?
@@ -143,16 +143,16 @@
 - CRLF technique
 - Normalization method
 
-> Explanation:
+Explanation:
 
     
-> CRLF Technique: Carriage return, line feed (CRLF) is a pair of ASCII codes, 13 and 10. In Windows, CRLF is used to indicate the end of a line in a text file (\r\n). Macintosh uses CR (\r) alone and UNIX uses LF(\n) alone.
+> **CRLF Technique**: Carriage return, line feed (CRLF) is a pair of ASCII codes, 13 and 10. In Windows, CRLF is used to indicate the end of a line in a text file (\r\n). Macintosh uses CR (\r) alone and UNIX uses LF(\n) alone.
     
-> HPF Technique: HPF is used along with HPP using the UNION operator to bypass firewalls.
+> **HPF Technique**: HPF is used along with HPP using the UNION operator to bypass firewalls.
     
-> Normalization Method: Systematic representation of the database in the normalization process sometimes leads to an SQL injection attack.
+> **Normalization Method**: Systematic representation of the database in the normalization process sometimes leads to an SQL injection attack.
     
-> Blind SQL Injection: This technique is used to replace WAF signatures with their synonyms using SQL functions. Attackers use logical requests such as AND/OR to bypass the firewall.
+> **Blind SQL Injection**: This technique is used to replace WAF signatures with their synonyms using SQL functions. Attackers use logical requests such as AND/OR to bypass the firewall.
 
 
 
@@ -166,11 +166,11 @@
 - INSERT INTO mysql.user (user, host, password) VALUES ('victor', 'localhost', PASSWORD('Pass123'))
 - **exec sp_addlogin 'victor', 'Pass123' exec sp_addsrvrolemember 'victor', 'sysadmin'**
 
-> Explanation:
+Explanation:
 
 > The following are different ways of creating database accounts in various DBMS:
 
-> Oracle
+> **Oracle**
 
 `CREATE USER victor IDENTIFIED BY Pass123`
 
@@ -182,17 +182,17 @@
 
 `GRANT RESOURCE TO victor;`
 
-> Microsoft Access
+> **Microsoft Access**
 
 `CREATE USER victor`
 
 `IDENTIFIED BY 'Pass123'`
 
-> MySQL
+> **MySQL**
 
 `INSERT INTO mysql.user (user, host, password) VALUES ('victor', 'localhost', PASSWORD('Pass123'))`
 
-> Microsoft SQL Server
+> **Microsoft SQL Server**
 
 `exec sp_addlogin 'victor', 'Pass123'`
 
@@ -210,23 +210,23 @@
 - **SELECT name FROM syscolumns WHERE id = (SELECT id FROM sysobjects WHERE name = 'tablename')**
 - SELECT * FROM all_tab_columns WHERE table_name='tablename'
 
-> Explanation:
+Explanation:
 
 Column Enumeration in DB
 
-> MSSQL
+> **MSSQL**
 
 `SELECT name FROM syscolumns WHERE id = (SELECT id FROM sysobjects WHERE name = 'tablename')`
 
-> Oracle
+> **Oracle**
 
 `SELECT * FROM all_tab_columns WHERE table_name='tablename'`
 
-> DB2
+> **DB2**
 
 `SELECT * FROM syscat.columns WHERE tabname= 'tablename'`
 
-> PostgreSQL
+> **PostgreSQL**
 
 `SELECT attnum,attname from pg_class, pg_attribute WHERE relname= 'tablename' AND pg_class.oid=attrelid AND attnum > 0`
 
@@ -242,7 +242,7 @@ Column Enumeration in DB
 - Semicolon
 - Right square bracket
 
-> Explanation:
+Explanation:
 
     
 > **Single and double quotes**: In black box penetration testing, single and double quotes are used as the input data to catch instances where the user input is not sanitized.
@@ -263,13 +263,13 @@ Column Enumeration in DB
 
 Explanation:
 
->Variations: Uses the WHERE statement that always evaluates to 'true,' so that any mathematical or string comparison can be used. It is performed by placing characters such as “' or '1'='1'” on any basic injection statement such as“or 1=1” or with other accepted SQL comments.
+>**Variations**: Uses the WHERE statement that always evaluates to 'true,' so that any mathematical or string comparison can be used. It is performed by placing characters such as “' or '1'='1'” on any basic injection statement such as“or 1=1” or with other accepted SQL comments.
     
->Declare Variables: Uses variables that can be used to pass a series of specially crafted SQL statements and bypass the detection mechanism.
+>**Declare Variables**: Uses variables that can be used to pass a series of specially crafted SQL statements and bypass the detection mechanism.
     
->Case Variation: Obfuscate an SQL statement by mixing it with uppercase and lowercase letters.
+>**Case Variation**: Obfuscate an SQL statement by mixing it with uppercase and lowercase letters.
     
->Null Byte: Uses the null byte (%00) character prior to a string in order to bypass the detection mechanism.
+>**Null Byte**: Uses the null byte (%00) character prior to a string in order to bypass the detection mechanism.
 
 
 
@@ -282,7 +282,7 @@ Explanation:
 - /*…*/
 - **%**
 
-> Explanation:
+Explanation:
 
 The various SQL injection characters are as follows:
 1. ' or " character string indicators
@@ -307,7 +307,7 @@ The various SQL injection characters are as follows:
 - Output encoding
 - **Whitelist validation**
 
->Explanation:
+Explanation:
 
 > **Output Encoding**: Output encoding is used to encode the input to ensure it is properly sanitized before being passed to the 
 
@@ -327,7 +327,7 @@ The various SQL injection characters are as follows:
 - **/(\%27)|(\')|(\-\-)|(\%23)|(#)/ix**
 - ' OR 5 BETWEEN 1 AND 7
 
-> Explanation:
+Explanation:
 
 > Many of the common attacks use specific type of code sequences or commands that allow attackers to gain an unauthorized access to the target's system and data. These commands and code sequences allow a user to write Snort rules that aim to detect SQL injection attacks.
 
@@ -356,7 +356,7 @@ Identify the defensive technique employed by Finch in the above scenario.
 - Enforcing least privileges
 - **LIKE clauses**
 
-> Explanation:
+Explanation:
     
 > **Whitelist Validation**: Whitelist validation is a best practice whereby only the list of entities (i.e., data type, range, size, value, etc.) that have been approved for secured access is accepted.
     

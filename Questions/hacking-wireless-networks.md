@@ -8,7 +8,7 @@
 - DSSS
 - **MIMO-OFDM**
 
->Explanation:
+Explanation:
 
     
 >**Orthogonal Frequency-division Multiplexing (OFDM)**: Method of encoding digital data on multiple carrier frequencies
@@ -29,7 +29,7 @@
 - **Direct-sequence Spread Spectrum (DSSS)**
 - Multiple input, multiple output orthogonal frequency-division multiplexing (MIMO-OFDM)
 
->Explanation:
+Explanation:
 
     
 > **Orthogonal Frequency-division Multiplexing (OFDM)**: OFDM is a method of digital modulation of data in which a signal, at a chosen frequency, is split into multiple carrier frequencies that are orthogonal (occurring at right angles) to each other. OFDM maps information on the changes in the carrier phase, frequency, or amplitude, or a combination of these, and shares bandwidth with other independent channels.
@@ -50,7 +50,7 @@
 - 802.11d
 - 802.11e
 
->Explanation:
+Explanation:
 
     
 >**802.11n**: The IEEE 802.11n is a revision that enhances the earlier 802.11g standards with multiple-input multiple-output (MIMO) antennas. It works in both the 2.4 GHz and 5 GHz bands. This is an IEEE industry standard for Wi-Fi wireless local network transportations. Digital Audio Broadcasting (DAB) and Wireless LAN use OFDM.
