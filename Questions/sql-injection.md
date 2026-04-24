@@ -366,3 +366,59 @@ Explanation:
     
 > **Wrapping Parameters with QUOTENAME()and REPLACE()**: The data received from the parameters used in the stored procedure or the data received from the existing tables should be wrapped using QUOTENAME() and REPLACE().
 
+### In blind SQLi, attackers can steal data by asking a series of true or false questions through SQL statements. Select all the correct types of blind SQL injections.
+
+
+- **Boolean exploitation**
+- Tautology
+- **Time delay**
+- System-stored procedure
+
+Explanation:
+   
+> Unlike an error-based SQL injection, a blind SQL injection is used when a web application is vulnerable to an SQL injection, but the results of the injection are not visible to the attacker. Both (a) and (b) are types of Blind SQLi. However, (c) and (d) are types of error-based SQL injections.
+
+
+
+### In which of the following database technologies is the SQL query [SELECT * FROM syscat.columns WHERE tabname= 'tablename'] used for column enumeration?
+
+
+- MySQL
+- MSSQL
+- Oracle
+- DB2
+
+Explanation:
+
+> Column Enumeration in DB
+
+> **Oracle**: `SELECT * FROM all_tab_columns WHERE table_name='tablename'`
+    
+> **DB2**: `SELECT * FROM syscat.columns WHERE tabname= 'tablename'`
+    
+> **MySQL**: `show columns from tablename`
+    
+> **MSSQL**: `SELECT name FROM syscolumns WHERE id = (SELECT id FROM sysobjects WHERE name = 'tablename') sp_columns tablename`
+
+
+
+### Which of the following database management systems contains the system table called “MsysObjects”?
+
+
+- **MS Access**
+- MySQL
+- MSSQL
+- Oracle
+
+![IMAGE](image/SQL1.png)
+
+### Which of the following operators is used for string concatenation in an Oracle database?
+
+
+- ' '+' '
+- ' '||'
+- concat(,)
+- " "&" "
+
+![IMAGE](image/sql2.png)
+
