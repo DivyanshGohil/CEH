@@ -394,3 +394,17 @@ Explanation:
 >The attacker obtains the plaintexts corresponding to an arbitrary set of ciphertexts of his own choice. Using this information, the attacker tries to recover the key used to encrypt the plaintext. To perform this attack, the attacker must have access to the communication channel between the sender and the receiver.
 
 
+
+
+### In which of the following attacks, can an attacker obtain ciphertexts encrypted under two different keys and gather plaintext and matching ciphertext?
+
+
+- Chosen-plaintext attack
+- Adaptive chosen-plaintext attack
+- Ciphertext-only attack
+- **Related-key attack**
+
+Explanation:
+
+> The correct answer is **Related-key attack**. The related-key attack is similar to the chosen plaintext attack, except that the attacker can obtain ciphertexts encrypted under two different keys. This is actually a very useful attack if one can obtain the plaintext and matching ciphertext. The attack requires that the differing keys be closely related, for example, in a wireless environment where subsequent keys might be derived from previous keys. Then, while the keys are different, they are close. Much like the ciphertext-only attack, this one is most likely to yield a partial break.
+

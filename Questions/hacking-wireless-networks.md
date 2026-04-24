@@ -475,3 +475,94 @@ Explanation:
 >   - Limit the strength of the wireless network so that it cannot be detected outside the bounds of the organization.
 >  - Separate the organizational network into multiple zones with their own SSIDs to reduce the level of exploitation during attacks.
 
+### Which of the following wireless standards uses modulation schemes such as GFSK, π/4-DPSK, and 8DPSK and a frequency of 2.4 GHz with data transfer rates in the range of 25–50 Mbps?
+
+
+- **802.15.1 (Bluetooth)**
+- 802.11g
+- 802.16 (WiMAX)
+- 802.11a
+
+![IMAGE](image/wireless3.png)
+
+### WPA2 uses AES for wireless data encryption at which of the following encryption levels?
+
+
+- 128 bit and TKIP
+- 64 bit and CCMP
+- **128 bit and CCMP**
+- 128 bit and CRC
+
+![IMAGE](image/wireless4.png)
+
+
+
+### Which of the following tools is designed to capture a WPA/WPA2 handshake and act as an ad-hoc AP?
+
+
+- Airodump-ng
+- Airmon-ng
+- **Airbase-ng**
+- Airolib-ng
+
+Explanation:
+
+> **Airmon-ng**: Used to enable monitor mode on wireless interfaces from managed mode and vice versa.
+> **Airbase-ng**: Captures WPA/WPA2 handshake and can act as an ad-hoc AP.
+> **Airolib-ng**: Stores and manages essid and password lists used in WPA/WPA2 cracking.
+> **Airodump-ng**: Used to capture packets of raw 802.11 frames and collect WEP IVs.
+
+
+
+### Kenneth, a professional penetration tester, was hired by the XYZ Company to conduct wireless network penetration testing. Kenneth proceeds with the standard steps of wireless penetration testing. He tries to collect lots of initialization vectors (IVs) using the injection method to crack the WEP key. He uses the aircrack-ng tool to capture the IVs from a specific AP. Which of the following aircrack-ng commands will help Kenneth to do this?
+
+
+- airmon-ng start wifi0 9
+- aireplay-ng -9 -e teddy -a 00:14:6C:7E:40:80 ath0
+- aireplay-ng -1 0 -e teddy -a 00:14:6C:7E:40:80 -h 00:0F:B5:88:AC:82 ath0
+- airodump-ng -c 9 -- bssid 00:14:6C:7E:40:80 -w output ath0
+
+Explanation:
+
+> Start airodump-ng to capture the IVs: The purpose of this step is to capture the IVs generated. This step starts airodump-ng to capture the IVs from the specific AP. Open another console session to capture the generated IVs. Then enter:
+
+> 'airodump-ng -c 9 --bssid 00:14:6C:7E:40:80 -w output ath0`
+>Where:
+>-c 9 is the channel for the wireless network
+>--bssid 00:14:6C:7E:40:80 is the AP MAC address. This eliminates extraneous traffic.
+> -w capture is file name prefix for the file which will contain the IVs.
+>ath0 is the interface name.
+
+> Test Wireless Device Packet Injection: The purpose of this step ensures that your card is within distance of your AP and can inject packets to it. Enter:
+
+> `aireplay-ng -9 -e teddy -a 00:14:6C:7E:40:80  ath0`
+> Where:
+> -9 means injection test
+> -e teddy is the wireless network name
+> -a 00:14:6C:7E:40:80 is the AP MAC address
+> ath0 is the wireless interface name
+
+> Start the wireless card: Enter the following command to start the wireless card on channel 9 in monitor mode:
+
+> `airmon-ng start wifi0 9`
+
+> Substitute the channel number that your AP runs on for “9” in the command above.
+
+> Use aireplay-ng to do a fake authentication with the AP: In order for an AP to accept a packet, the source MAC address must already be associated. If the source MAC address you are injecting is not associated then the AP ignores the packet and sends out a “DeAuthentication” packet in cleartext. In this state, no new IVs are created because the AP is ignoring all the injected packets.
+
+> To associate with an AP, use fake authentication:
+
+> `aireplay-ng -1 0 -e teddy -a 00:14:6C:7E:40:80 -h 00:0F:B5:88:AC:82 ath0`
+> Where:
+
+> -1 means fake authentication
+
+> 0 reassociation timing in seconds
+
+> -e teddy is the wireless network name
+
+> -a 00:14:6C:7E:40:80 is the AP MAC address
+
+> -h 00:0F:B5:88:AC:82 is our card MAC address
+
+> ath0 is the wireless interface name
