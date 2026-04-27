@@ -87,8 +87,7 @@ Explanation:
 >**Suicide hackers**: Suicide hackers are similar to suicide bombers who sacrifice their life for an attack and are thus not concerned with the consequences of their actions.
 
 
-### Highlander, Incorporated, decides to hire an ethical hacker to identify vulnerabilities at the regional locations and ensure system security.
-What is the main difference between a hacker and an ethical hacker when they are trying to compromise the regional offices?
+### Highlander, Incorporated, decides to hire an ethical hacker to identify vulnerabilities at the regional locations and ensure system security. What is the main difference between a hacker and an ethical hacker when they are trying to compromise the regional offices?
 - Ethical hackers have the permission of the regional server administrators.
 - Hackers don’t have any knowledge of the network before they compromise the network. 
 - Hackers have more sophisticated tools.
