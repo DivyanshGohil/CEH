@@ -163,3 +163,24 @@ Explanation:
 >**Studies and Reports**: Title VII consists of five sections and requires the Comptroller General and the Securities and Exchange Commission (SEC) to perform various studies and to report their findings. The required studies and reports include the effects of the consolidation of public accounting firms, the role of credit rating agencies in the operation of securities markets, securities violations, enforcement actions, and whether investment banks assisted Enron, Global Crossing, and others to manipulate earnings and obfuscate true financial conditions.
 
 
+
+
+### Which of the following is the warfare category in which viruses, worms, Trojan horses, or sniffers are used to make systems shut down automatically, corrupt data, steal information or services, send fraudulent messages, and access unauthorized data?
+
+
+- Psychological warfare
+- **Hacker warfare**
+- Electronic warfare
+- C2 warfare
+
+Explanation:
+
+    
+>**Psychological warfare**: Psychological warfare is the use of various techniques such as propaganda and terror to demoralize one’s adversary in an attempt to succeed in battle
+    
+>**Hacker warfare**: The purpose of this type of warfare can vary from the shutdown of systems, data errors, theft of information, theft of services, system monitoring, false messaging, and access to data.
+    
+>**C2 warfare**: In the computer security industry, C2 warfare refers to the impact an attacker possesses over a compromised system or network that they control.
+    
+>**Electronic warfare**: It uses radio-electronic and cryptographic techniques to degrade the communication.
+
