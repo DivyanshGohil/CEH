@@ -369,3 +369,137 @@ Explanation:
 - net user <UserName> /active:no
 
 ![IMAGE](image/system3.png)
+
+
+
+### Given below are the different steps followed in pivoting.
+
+1. Exploit vulnerable services.
+2. Discover live hosts in the network.
+3. Scan ports of live systems.
+4. Set up routing rules.
+
+### What is the correct sequence of steps involved in pivoting?
+
+
+- 2 -> 1 -> 3 -> 4
+- 2 -> 3 -> 1 -> 4
+- **2 -> 4 -> 3 -> 1**
+- 1 -> 2 -> 3 -> 4
+
+Explanation:
+
+>The sequence of steps to perform pivoting:
+>- Discover live hosts in the network
+>- Set up routing rules
+>- Scan ports of live systems
+>- Exploit vulnerable services
+
+
+
+### Which of the following vulnerabilities allows attackers to trick a processor to exploit speculative execution to read restricted data?
+
+
+- DLL hijacking
+- **Spectre**
+- Meltdown
+- Dylib hijacking
+
+Explanation:
+
+>**Meltdown vulnerability**: This is found in all the Intel processors and ARM processors deployed by Apple. This vulnerability leads to tricking a process to access out-of-bounds memory by exploiting CPU optimization mechanisms such as speculative execution.
+>**Dylib hijacking**: This allows an attacker to inject a malicious dylib in one of the primary directories and simply load the malicious dylib at runtime.
+>**Spectre vulnerability**: Spectre vulnerability is found in many modern processors such as AMD, ARM, Intel, Samsung, and Qualcomm processors. This vulnerability leads to tricking a processor to exploit speculative execution to read restricted data. The modern processors implement speculative execution to predict the future and to complete the execution faster.
+>**DLL hijacking**: In DLL hijacking attackers place a malicious DLL in the application directory; the application will execute the malicious DLL in place of the real DLL.
+
+
+
+### Which of the following types of rootkits replaces original system calls with fake ones to hide information about the attacker?
+
+
+- Hypervisor-level rootkit
+- Boot-loader-level rootkit
+- **Library-level rootkit**
+- Hardware/firmware rootkit
+
+Explanation:
+
+>**Boot Loader Level Rootkit**: Replaces the original boot loader with the one controlled by a remote attacker.
+>**Hardware/Firmware Rootkit**: Hides in hardware devices or platform firmware that are not inspected for code integrity.
+>**Hypervisor Level Rootkit**: Acts as a hypervisor and modifies the boot sequence of the computer system to load the host operating system as a virtual machine.
+>**Library Level Rootkit**: Replaces the original system calls with fake ones to hide information about the attacker.
+
+
+
+### Which of the following is malicious code concealed within UEFI firmware in SPI flash, scheduled to be executed at a specific time?
+
+
+- GlitchPOS
+- Restorator
+- Dreambot
+- **MoonBounce**
+
+Explanation:
+
+>**Dreambot**: Dreambot banking Trojans are also known as updated versions of Ursnif or Gozi. Dreambot Trojans have long been used by hackers, and they have been regularly updated with more sophisticated capabilities. They can be delivered through the Emotet dropper or RIG exploit kit. This Trojan can also be embedded as a macro in an MS word document and sent to victims via spam emails. If this Trojan gets into the victim’s machine, it will covertly create registry keys and processes, and attempt to connect to multiple malicious C2C servers.
+
+>**MoonBounce**: MoonBounce is malicious code concealed within UEFI firmware in the SPI flash that is scheduled to be executed at a specific time. Security systems have limited awareness of such implants; therefore, they are difficult to detect and remove. MoonBounce has a complex attack flow that is noticeably better than previously known UEFI firmware bootkits.
+
+>**GlitchPOS**: It is popularly known as GlitchPOS.A. GlitchPOS is a fake cat game that is embedded in malware and not displayed at the time of execution. It is a Trojan that masquerades as a cat game.
+
+>**Restorator**: Restorator is a utility for editing Windows resources in applications and their components (e.g., files with .exe, .dll, .res, .rc, and .dcr extensions). It allows you to change, add, or remove resources such as text, images, icons, sounds, videos, versions, dialogs, and menus in nearly all programs. Using this tool, one can achieve translation/localization, customization, design improvement, and development.
+
+
+
+### Which of the following commands allows attacks to abuse Data Protection API (DPAPI) to obtain all the backup master keys from Windows domain controllers (DCs)?
+
+
+- lsadump::dcsync /domain:domain name /user:krbtgt
+- Invoke-Mimikatz -command '"lsadump::dcsync /domain:<Target Domain> /user:<krbtgt>\<Any Domain User>"
+- mimikatz “lsadump::dcsync /domain:(domain name) /user:Administrator”
+- lsadump::backupkeys /system:dc01.offense.local /export
+
+Explanation:
+
+>`lsadump::backupkeys /system:dc01.offense.local /export`: Attackers run this command to retrieve all backup master keys.
+
+>`lsadump::dcsync /domain:domain name /user:krbtgt`: Attackers use mimikatz to perform a pass-the-hash attack or DCSync attack to steal KRBTGT’s password hash by executing this command.
+    
+>`Invoke-Mimikatz -command '"lsadump::dcsync /domain:<Target Domain> /user:<krbtgt>\<Any Domain User>"`: Attackers attempt malicious replication using this command.
+
+>`mimikatz “lsadump::dcsync /domain:(domain name) /user:Administrator”`: Attackers execute this command to retrieve the NTLM password hashes of an administrator account.
+
+
+
+### George, a professional hacker, compromised the target domain controller to maintain domain dominance. For this reason, he installed a memory-resident virus that injects false credentials into a DC to create a backdoor password. Using the virus, George obtained the master password to validate himself as a legitimate user in the domain. Which of the following attacks did George perform in the above scenario?
+
+
+- Overpass-the-hash attack
+- **Skeleton key attack**
+- Dumpster diving
+- STP attack
+
+Explanation:
+
+> **Overpass-the-Hash Attack**: The overpass-the-hash (OPtH) attack is an extension of pass-the-ticket and pass-the-hash attacks. It is a type of credential theft-and-reuse attack using which attackers perform malicious activities on compromised devices or environments.
+
+> **Dumpster Diving**: “Dumpster diving” is a key attack method that employs significant failures in computer security in the target system.
+
+> **STP Attack**: In a Spanning Tree Protocol (STP) attack, attackers connect a rogue switch into the network to change the operation of the STP protocol and sniff all the network traffic. STP is used in LAN-switched networks with the primary function of removing potential loops within the network.
+
+> **Skeleton Key Attack**: A skeleton key is a form of malware that attackers use to inject false credentials into domain controllers (DCs) to create a backdoor password. It is a memory-resident virus that enables an attacker to obtain a master password to validate themselves as a legitimate user in the domain.
+
+### Which of the following commands allows an attacker to retrieve all the users who have shell access?
+
+
+- /sbin/ifconfig -a
+- cat /etc/redhat* /etc/debian* /etc/*release
+- ls -la /etc/cron.d
+- **egrep -e '/bin/(ba)?sh' /etc/passwd**
+
+![IMAGE](image/system4.png)
+
+
+
+
+

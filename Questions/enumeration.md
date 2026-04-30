@@ -158,3 +158,122 @@ Explanation:
 >- Implement the principle of least privileges to mitigate threats such as data modification, data addition, and the modification of configuration files by normal users.
 >- Ensure that users are not running suid and sgid on the exported file system.
 >- Ensure that the NIS netgroup has a fully defined hostname to prevent the granting of higher access to other hosts.
+
+
+### Which of the following protocols provides reliable multiprocess communication service in a multinetwork environment?
+
+
+- SMTP
+- SNMP
+- **TCP**
+- UDP
+
+Explanation:
+
+    
+>**Transmission control protocol (TCP)** is a connection-oriented protocol. It is capable of carrying messages or e-mail over the Internet. It provides reliable multiprocess communication service in a multinetwork environment.
+    
+>**UDP** is a connectionless protocol, which provides unreliable service. It carries short messages over a computer network.
+
+>**SMTP** is a TCP/IP mail delivery protocol. It transfers e-mail across the Internet and the local network. It runs on connection-oriented service provided by TCP.
+
+>**Simple network management protocol (SNMP)** is widely used in network management systems to monitor network-attached devices such as routers, switches, firewalls, printers, servers, and so on.
+
+
+
+### What is the default port used by IPSEC IKE protocol?
+
+
+- Port 4500
+- **Port 500**
+- Port 50
+- Port 51
+
+Explanation:
+
+    
+>**IPSEC IKE**: IP Security Internet Key Exchange Protocol is used for establishing Security Association for IPsec Protocol Suite. IKE uses UDP port 500 for establishing security association.
+
+>**UDP port 4500**: is used IPsec NAT-T
+
+>**Remote Mail Checking Protocol**: uses UDP/TCP port 50
+
+>**Port 51**: is reserved by IANA
+
+### Which of the following NetBIOS service codes is used to obtain information related to the master browser name for the subnet?
+
+
+- <20>
+- <03>
+- <1E>
+- **<1D>**
+
+![IMAGE](image/enum1.png)
+
+
+
+### Which of the following SMTP in-built commands tells the actual delivery addresses of aliases and mailing lists?
+
+
+- RCPT TO
+- VRFY
+- **EXPN**
+- PSINFO
+
+Explanation:
+
+    
+>Mail systems commonly use SMTP with POP3 and IMAP that enables users to save the messages in the server mailbox and download them occasionally from the server. SMTP uses Mail Exchange (MX) servers to direct the mail via DNS. It runs on TCP port 25.
+    
+>SMTP provides 3 built-in-commands:
+>- VRFY - Validates users
+>- EXPN - Tells the actual delivery addresses of aliases and mailing lists
+>- RCPT TO - Defines the recipients of the message
+    
+>SMTP servers respond differently to VRFY, EXPN, and RCPT TO commands for valid and invalid users from which we can determine valid users on SMTP server. Attackers can directly interact with SMTP via the telnet prompt and collect list of valid users on the SMTP server.
+
+
+
+### Which of the following location and data examination tools allows ethical hackers to perform two or more scans on different machines in the network?
+
+
+- **Cluster scanner**
+- Agent-based scanner
+- Proxy scanner
+- Network-based scanner
+
+Explanation:
+
+Listed below are some of the location and data examination tools:
+
+>**Network-Based Scanner**: Network-based scanners are those that interact only with the real machine where they reside and give the report to the same machine after scanning.
+
+>**Agent-Based Scanner**: Agent-based scanners reside on a single machine but can scan several machines on the same network.
+
+>**Proxy Scanner**: Proxy scanners are the network-based scanners that can scan networks from any machine on the network.
+
+>**Cluster scanner**: Cluster scanners are similar to proxy scanners, but they can simultaneously perform two or more scans on different machines in the network.
+
+
+
+### Jim, an ethical hacker, was hired to perform a vulnerability assessment on an organization to check the security posture of the organization and its vulnerabilities. Jim used a tool that helped him continuously identify threats and monitor unexpected changes in the network before they turn into breaches.
+
+Which of the following tools did Jim employ in the above scenario?
+
+
+- Octoparse
+- Sherlock
+- theHarvester
+- **Qualys VM**
+
+Explanation:
+
+>theHarvester: theHarvester is a tool designed to be used in the early stages of a penetration test. It is used for open-source intelligence gathering and helps to determine a company's external threat landscape on the Internet. Attackers use this tool to perform enumeration on the LinkedIn social networking site to find employees of the target company along with their job titles.
+
+>**Qualys VM**: Qualys VM is a cloud-based service that gives immediate, global visibility into where IT systems might be vulnerable to the latest Internet threats and how to protect them. It helps to continuously identify threats and monitor unexpected changes in a network before they turn into breaches
+
+>Sherlock: Attackers use Sherlock to search a vast number of social networking sites for a target username. This tool helps the attacker to locate the target user on various social networking sites along with the complete URL.
+
+>Octoparse: Octoparse offers automatic data extraction, as it quickly scrapes web data without coding and turns web pages into structured data. As shown in the screenshot, attackers use Octoparse to capture information from webpages, such as text, links, image URLs, or html code.
+
+

@@ -627,8 +627,11 @@ Explanation:
 Explanation:
 
 > **Deterrent Controls**: These controls reduce attacks on the cloud system. Example: Warning sign on the fence or property to inform adverse consequences for potential attackers if they proceed to attack
+
 > **Preventive Controls**: These controls strengthen the system against incidents, probably by minimizing or eliminating vulnerabilities. Example: Strong authentication mechanism to prevent unauthorized use of cloud systems.
+
 > **Detective Controls**: These controls detect and react appropriately to the incidents that happen. Example: Employing IDSs, IPSs, etc. helps to detect attacks on cloud systems.
+
 > **Corrective controls**: These controls minimize the consequences of an incident, probably by limiting the damage. Example: Restoring system backups.
 
 

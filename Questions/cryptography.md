@@ -408,3 +408,35 @@ Explanation:
 
 > The correct answer is **Related-key attack**. The related-key attack is similar to the chosen plaintext attack, except that the attacker can obtain ciphertexts encrypted under two different keys. This is actually a very useful attack if one can obtain the plaintext and matching ciphertext. The attack requires that the differing keys be closely related, for example, in a wireless environment where subsequent keys might be derived from previous keys. Then, while the keys are different, they are close. Much like the ciphertext-only attack, this one is most likely to yield a partial break.
 
+
+
+### Which of the following attacks mainly affects any hardware/software using an ANSI X9.31 random number generator (RNG)?
+
+
+- Rainbow table attack
+- **DUHK attack**
+- Side channel attack
+- Hash collision attack
+
+Explanation:
+
+>The correct answer is (b). **DUHK (don't use hard-coded keys)** is a cryptographic vulnerability that allows attackers to obtain encryption keys used to secure VPNs and web sessions. This attack mainly affects any hardware/software using ANSI X9.31 random number generator (RNG). The pseudorandom number generators (PRNGs) generate random sequences of bits based on the initial secret value called a seed and the current state. The PRNG algorithm generates cryptographic keys that are used to establish a secure communication channel over VPN network. In some cases, the seed key is hardcoded into the implementation. Both the factors are the key issues of DUHK attack as any attacker could combine ANSI X9.31 with the hard coded seed key to decrypt the encrypted data sent or received by that device.
+
+
+
+
+### Out of the following, identify the attack that is used for cracking a cryptographic algorithm using multiple keys for encryption.
+
+
+- **Meet-in-the-middle attack**
+- Side channel attack
+- DUHK attack
+- Rainbow table attack
+
+Explanation:
+
+>A meet-in-the-middle attack is the best attack method for cryptographic algorithms using multiple keys for encryption. This attack reduces the number of brute force permutations needed to decode text encrypted by more than one key and conducted mainly for forging signatures on mixed type digital signatures. A meet-in-the-middle attack uses space–time tradeoff; it is a birthday attack because it exploits the mathematics behind the birthday paradox. It is called a meet-in-the-middle attack because it works by encrypting from one end and decrypting from the other end, thus meeting “in the middle.”
+
+>In the meet-in-the-middle attack, the attacker uses a known plaintext message and has access to both the plaintext as well as the respective encrypted text. It takes less time than an exhaustive attack and is used by attackers for forging signatures, even on digital signatures that use the multiple-encryption scheme.
+
+
