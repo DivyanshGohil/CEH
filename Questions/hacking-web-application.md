@@ -1,53 +1,63 @@
-Which of the following is an operation in the web service architecture that involves obtaining the service interface description at the time of development as well as the binding and location description calls at run time?
+### Which of the following is an operation in the web service architecture that involves obtaining the service interface description at the time of development as well as the binding and location description calls at run time?
 
 
-**Find**
-Bind
-Publish
-Service
-
-Explanation:
-    • Publish: During this operation, service descriptions are published to allow the requester to discover the services
-    • During this operation, the requester calls and establishes communication with the services during run time, using binding data inside the service descriptions to locate and invoke the services.
-    • Find: During this operation, the requester tries to obtain the service descriptions. This operation can be processed in two different phases: obtaining the service interface description at development time and obtain the binding and location description calls at run time.
-    • Service: It is a software module offered by the service provider over the Internet. It communicates with the requesters. At times, it can also serve as a requester, invoking other services in its implementation
-
-Which of the following is a security risk due to the incorrect implementation of applications, allowing attackers to compromise passwords, keys, session tokens, and exploit user identity?
-
-
-**roken authentication**
-Security misconfiguration
-Injection
-Sensitive data exposure
+- **Find**
+- Bind
+- Publish
+- Service
 
 Explanation:
-    • Injection: Injection flaws, such as SQL, command injection, and LDAP injection, occur when untrusted data is sent to an interpreter as part of a command or query. The attacker’s hostile data can trick the interpreter into executing unintended commands or accessing data without proper authorization.
-    • Broken Authentication: Application functions related to authentication and session management are often implemented incorrectly, thereby allowing attackers to compromise passwords, keys, or session tokens or to exploit other implementation flaws to assume identities of other users (temporarily or permanently).
-    • Sensitive Data Exposure: Many web applications and APIs do not properly protect sensitive data, such as financial, healthcare, and personally identifiable information (PII) data. Attackers may steal or modify such weakly protected data to conduct credit card fraud, identity theft, or other crimes. Sensitive data requires extra protection such as encryption at rest or in transit, as well as special precautions when exchanged with the browser.
-    • Security Misconfiguration: Security misconfiguration is the most common issue in web security, which is due in part to manual or ad hoc configuration (or no configuration at all), insecure default configurations, open S3 buckets, misconfigured HTTP headers, error messages containing sensitive information, and not patching or upgrading systems, frameworks, dependencies, and components in a timely manner (or at all).
+
+>Publish: During this operation, service descriptions are published to allow the requester to discover the services
+
+>During this operation, the requester calls and establishes communication with the services during run time, using binding data inside the service descriptions to locate and invoke the services.
+
+>Find: During this operation, the requester tries to obtain the service descriptions. This operation can be processed in two different phases: obtaining the service interface description at development time and obtain the binding and location description calls at run time.
+
+>Service: It is a software module offered by the service provider over the Internet. It communicates with the requesters. At times, it can also serve as a requester, invoking other services in its implementation
+
+### Which of the following is a security risk due to the incorrect implementation of applications, allowing attackers to compromise passwords, keys, session tokens, and exploit user identity?
 
 
-An attacker exploits a web application by tampering with the form and parameter of the web application and he is successful in exploiting the web application and gaining access. Which type of vulnerability did the attacker exploit?
-
-
-**Security misconfiguration**
-Broken access control 
-SQL injection
-Sensitive data exposure
-
-Explanation:
-    • Using misconfiguration vulnerabilities such as unvalidated inputs, parameter/form tampering, improper error handling, insufficient transport layer protection, and so on, attackers gain unauthorized accesses to default accounts, read unused pages, read/write unprotected files and directories, and so on. Security misconfiguration can occur at any level of an application stack, including the platform, webserver, application server, framework, and custom code.
-
-During a penetration test, a tester finds that the web application being analyzed is vulnerable to XSS. Which of the following conditions must be met to exploit this vulnerability?
-
-
-The victim's browser must have ActiveX technology enabled.
-The victim user should not have an endpoint security solution.
-The web application does not have the secure flag set.
-**The session cookies do not have the HttpOnly flag set.**
+**Broken authentication**
+- Security misconfiguration
+- Injection
+- Sensitive data exposure
 
 Explanation:
-    • Generally, the XSS attacks target stealing session cookies. If for a web application the HttpOnly flag is not set then it is vulnerable XSS attack. A web server can defend against such attacks by setting the HttpOnly flag on a cookie it creates which is not accessible to the client. When a browser supports HttpOnly and detects a cookie containing the HttpOnly flag, the client side script tries to access the cookie then the browser returns back an empty string. This defends XSS attack by preventing the malicious code sending data to the attacker’s website.
+
+>Injection: Injection flaws, such as SQL, command injection, and LDAP injection, occur when untrusted data is sent to an interpreter as part of a command or query. The attacker’s hostile data can trick the interpreter into executing unintended commands or accessing data without proper authorization.
+
+>Broken Authentication: Application functions related to authentication and session management are often implemented incorrectly, thereby allowing attackers to compromise passwords, keys, or session tokens or to exploit other implementation flaws to assume identities of other users (temporarily or permanently).
+
+>Sensitive Data Exposure: Many web applications and APIs do not properly protect sensitive data, such as financial, healthcare, and personally identifiable information (PII) data. Attackers may steal or modify such weakly protected data to conduct credit card fraud, identity theft, or other crimes. Sensitive data requires extra protection such as encryption at rest or in transit, as well as special precautions when exchanged with the browser.
+
+>Security Misconfiguration: Security misconfiguration is the most common issue in web security, which is due in part to manual or ad hoc configuration (or no configuration at all), insecure default configurations, open S3 buckets, misconfigured HTTP headers, error messages containing sensitive information, and not patching or upgrading systems, frameworks, dependencies, and components in a timely manner (or at all).
+
+
+### An attacker exploits a web application by tampering with the form and parameter of the web application and he is successful in exploiting the web application and gaining access. Which type of vulnerability did the attacker exploit?
+
+
+- **Security misconfiguration**
+- Broken access control 
+- SQL injection
+- Sensitive data exposure
+
+Explanation:
+
+>Using misconfiguration vulnerabilities such as unvalidated inputs, parameter/form tampering, improper error handling, insufficient transport layer protection, and so on, attackers gain unauthorized accesses to default accounts, read unused pages, read/write unprotected files and directories, and so on. Security misconfiguration can occur at any level of an application stack, including the platform, webserver, application server, framework, and custom code.
+
+### During a penetration test, a tester finds that the web application being analyzed is vulnerable to XSS. Which of the following conditions must be met to exploit this vulnerability?
+
+
+- The victim's browser must have ActiveX technology enabled.
+- The victim user should not have an endpoint security solution.
+- The web application does not have the secure flag set.
+- **The session cookies do not have the HttpOnly flag set.**
+
+Explanation:
+
+>Generally, the XSS attacks target stealing session cookies. If for a web application the HttpOnly flag is not set then it is vulnerable XSS attack. A web server can defend against such attacks by setting the HttpOnly flag on a cookie it creates which is not accessible to the client. When a browser supports HttpOnly and detects a cookie containing the HttpOnly flag, the client side script tries to access the cookie then the browser returns back an empty string. This defends XSS attack by preventing the malicious code sending data to the attacker’s website.
 
 Which of the following conditions must be given to allow a tester to exploit a cross-site request forgery (CSRF) vulnerable web application?
 
