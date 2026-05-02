@@ -84,11 +84,11 @@ Explanation:
 > IoT Architecture
 
 > The functions performed by each layer in the architecture are given below:
->- Edge Technology Layer: This layer consists of all the hardware parts like sensors, RFID tags, readers or other soft sensors and the device itself. These entities are the primary part of the data sensors that are deployed in the field for monitoring or sensing various phenomena. This layer plays an important part in data collection, connecting devices within the network and with the server.
->- Access Gateway Layer: This layer helps to bridge the gap between two endpoints like a device and a client. The very first data handling also takes place in this layer. It carries out message routing, message identification and subscribing.
->- Internet Layer: This is the crucial layer as it serves as the main component in carrying out the communication between two endpoints such as device-to-device, device-to-cloud, device-to-gateway and back-end data-sharing.
->- Middleware Layer: This is one of the most critical layers that operates in two-way mode. As the name suggests this layer sits in the middle of the application layer and the hardware layer, thus behaving as an interface between these two layers. It is responsible for important functions such as data management, device management and various issues like data analysis, data aggregation, data filtering, device information discovery and access control.
->- Application Layer: This layer placed at the top of the stack, is responsible for the delivery of services to the respective users from different sectors like building, industrial, manufacturing, automobile, security, healthcare, etc.
+>- **Edge Technology Layer**: This layer consists of all the hardware parts like sensors, RFID tags, readers or other soft sensors and the device itself. These entities are the primary part of the data sensors that are deployed in the field for monitoring or sensing various phenomena. This layer plays an important part in data collection, connecting devices within the network and with the server.
+>- **Access Gateway Layer**: This layer helps to bridge the gap between two endpoints like a device and a client. The very first data handling also takes place in this layer. It carries out message routing, message identification and subscribing.
+>- **Internet Layer**: This is the crucial layer as it serves as the main component in carrying out the communication between two endpoints such as device-to-device, device-to-cloud, device-to-gateway and back-end data-sharing.
+>- **Middleware Layer**: This is one of the most critical layers that operates in two-way mode. As the name suggests this layer sits in the middle of the application layer and the hardware layer, thus behaving as an interface between these two layers. It is responsible for important functions such as data management, device management and various issues like data analysis, data aggregation, data filtering, device information discovery and access control.
+>- **Application Layer**: This layer placed at the top of the stack, is responsible for the delivery of services to the respective users from different sectors like building, industrial, manufacturing, automobile, security, healthcare, etc.
 
 ### Name the communication model where the IoT devices communicate with the cloud service through gateways?
 
@@ -114,7 +114,7 @@ Explanation:
 - Insecure default settings
 - Insecure ecosystem interfaces
 - Insecure data transfer and storage
-**Insecure network services**
+- **Insecure network services**
 
 Explanation:
 

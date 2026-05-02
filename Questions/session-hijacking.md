@@ -28,6 +28,7 @@ Explanation:
 Explanation:
 
 >A session fixation attack has the following three phases:
+
 >**Session set-up phase**: In this phase, the attacker first obtains a legitimate session ID by establishing a connection with the target web server. Few web servers support the idle session time-out feature. If the target web server supports this feature, the attacker needs to send requests repeatedly to keep the established trap session ID alive.
 
 >**Fixation phase**: In this phase, the attacker introduces the session ID to the victim's browser, thereby fixing the session.

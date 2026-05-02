@@ -9,8 +9,11 @@
 Explanation:
 
 >**Negligent Insider**: Insiders who are uneducated on potential security threats or who simply bypass general security procedures to meet workplace efficiency.
+
 >**Professional Insider**: Harmful insiders who use their technical knowledge to identify weaknesses and vulnerabilities in the company’s network and sell confidential information to competitors or black-market bidders
+
 >**Compromised Insider**: An insider with access to critical assets of an organization who is compromised by an outside threat actor.
+
 >**Malicious Insider**: A disgruntled or terminated employee who steals data or destroys the company’s networks intentionally by introducing malware into the corporate network.
 
 ### Which of the following insider threat is caused due to the employee’s laxity toward security measures, policies, and practices?
