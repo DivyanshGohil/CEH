@@ -17,7 +17,7 @@ Explanation:
 >**M7—Client Code Quality**: This category covers “Security Decisions via Untrusted Inputs” and is one of the less frequently used categories. It is the catch-all for code-level implementation problems in the mobile client, which are distinct from server-side coding mistakes. It captures buffer overflows, format string vulnerabilities, and various other code-level mistakes where the solution is to rewrite some code that is running on the mobile device. Most exploitations that fall into this category result in foreign code execution or DoS on remote server endpoints (and not the mobile device itself).
 
 
-## If an attacker is able to access the email contact list, text messages, photos, etc. on your mobile device, then what type of attack did the attacker employ?
+### If an attacker is able to access the email contact list, text messages, photos, etc. on your mobile device, then what type of attack did the attacker employ?
 
 
 - BlueSniff

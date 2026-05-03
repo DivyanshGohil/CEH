@@ -7,7 +7,7 @@
 
 Explanation:
 
->Indications of file system intrusions:
+>**Indications of file system intrusions**:
 >- If you find new, unknown files/programs on your system, then there is a possibility that the system has been intruded into. The system can be compromised to the extent that it can, in turn, compromise other network systems.
 >- When an intruder gains access to a system, he or she tries to escalate privileges to gain administrative access. When the intruder obtains administrator privileges, he/she could change file permissions, for example, from read-only to write.
 >- Unexplained modifications in file size are also an indication of an attack. Make sure you analyze all your system files.
@@ -15,18 +15,17 @@ Explanation:
 >- You can identify unfamiliar file names in directories, including executable files with strange extensions and double extensions.
 >- Missing files are also a sign of a probable intrusion/attack. 
     
->Indications of network intrusions:
+>**Indications of network intrusions**:
 >- A sudden increase in bandwidth consumption
 >- Repeated probes of the available services on your machines
 >- Connection requests from IPs other than those in the network range, which imply that an unauthenticated user (intruder) is attempting to connect to the network
 >- Repeated login attempts from remote hosts
 >- A sudden influx of log data, which could indicate attempts at DoS attacks, bandwidth consumption, and DDoS attacks
     
->Indications of system intrusions:
+>**Indications of system intrusions**:
 >- Sudden changes in logs such as short or incomplete logs
->- Unusually slow system performance
-    
->Missing logs or logs with incorrect permissions or ownership 
+>- Unusually slow system performance    
+>- Missing logs or logs with incorrect permissions or ownership 
 >- Modifications to system software and configuration files
 >- Unusual graphic displays or text messages
 >- Gaps in system accounting
@@ -145,11 +144,11 @@ Explanation:
 
 
 ### Which of the following firewall solution tool has the following features:
-#### - Two-way firewall that monitors and blocks inbound as well as outbound traffic
-#### - Allows users to browse the web privately
-#### - Identity protection services help to prevent identity theft by guarding crucial data of the users. It also offers PC protection and data encryption
-#### - Through Do Not Track, it stops data-collecting companies from tracking the online users
-#### - Online Backup to backs up files and restores the data in the event of loss, theft, accidental deletion or disk failure
+1. Two-way firewall that monitors and blocks inbound as well as outbound traffic
+2. Allows users to browse the web privately
+3. Identity protection services help to prevent identity theft by guarding crucial data of the users. It also offers PC protection and data encryption
+4. Through Do Not Track, it stops data-collecting companies from tracking the online users
+5. Online Backup to backs up files and restores the data in the event of loss, theft, accidental deletion or disk failure
 
 
 - zIPS
