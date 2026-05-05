@@ -19,7 +19,7 @@ Explanation:
 ### Which of the following is a security risk due to the incorrect implementation of applications, allowing attackers to compromise passwords, keys, session tokens, and exploit user identity?
 
 
-**Broken authentication**
+- **Broken authentication**
 - Security misconfiguration
 - Injection
 - Sensitive data exposure
@@ -130,7 +130,7 @@ Explanation:
 Explanation:
 
 >The following information can be gathered by attackers after infecting the Google Chrome browser.
->User Activity 
+>- User Activity 
 >- User’s spoken language
 >- Most recent sites visited
 >- Types of media files accessed the most
@@ -157,8 +157,8 @@ Explanation:
 ### Which of the following parameters defines the level of access to an application to redirect a user agent to the authorization server?
 
 
-- **scope**
-- redirect_uri
+- scope
+- **redirect_uri**
 - response_type
 - State
 
