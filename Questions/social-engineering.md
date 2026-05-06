@@ -35,8 +35,7 @@ Explanation:
 
 >**Compromised Insider**: An outsider compromises insiders having access to critical assets or computing devices of an organization. This type of threat is more difficult to detect since the outsider masquerades as a genuine insider.
 
-### Jasmin, a receptionist in an organization, has received a phishing email embedded with a malicious link. The email address resembled her manager’s email address. This tricked Jasmin into clicking on the malicious link; as a result, malicious software automatically got installed on her system and gave remote access to the attacker. 
-Identify the type of insider threat discussed in the above scenario.
+### Jasmin, a receptionist in an organization, has received a phishing email embedded with a malicious link. The email address resembled her manager’s email address. This tricked Jasmin into clicking on the malicious link; as a result, malicious software automatically got installed on her system and gave remote access to the attacker. Identify the type of insider threat discussed in the above scenario.
 
 
 - Professional insider

@@ -96,7 +96,7 @@ Explanation:
 - Device-to-cloud communication model
 - Back-end data-sharing communication model
 - Device-to-device communication model
-**Device-to-gateway communication model**
+- **Device-to-gateway communication model**
 
 Explanation:
 
@@ -344,7 +344,7 @@ Explanation:
 ### Which of the following techniques allows an attacker to achieve higher-level access and authorizations to perform further malicious activities on an ICS system or network?
 
 
--Obfuscating 
+- Obfuscating 
 - Network address translation
 - **Hooking**
 - Activity profiling
@@ -379,8 +379,7 @@ Explanation:
 
 >**Anti-disassembly**: Anti-disassembly is a technique that uses specially crafted code or data in a program to produce an incorrect program listing by disassembly analysis tools.
 
-### Peter, a professional hacker, managed to gain unauthorized access to a target ICS network. He wanted to thwart reactions to any security event such as a hazard or failure. For this purpose, Peter employed a technique to block command messages to stop defense solutions from reacting to any security event.
-Identify the technique employed by Peter in the above scenario.
+### Peter, a professional hacker, managed to gain unauthorized access to a target ICS network. He wanted to thwart reactions to any security event such as a hazard or failure. For this purpose, Peter employed a technique to block command messages to stop defense solutions from reacting to any security event.  Identify the technique employed by Peter in the above scenario.
 
 
 - Command and control

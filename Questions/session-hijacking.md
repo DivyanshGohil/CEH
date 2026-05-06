@@ -114,8 +114,7 @@ Explanation:
 >3. Now, the attacker initiates NTLM replay attack to gain remote access to the target AD CS.
 >4. Finally, the attacker creates an AD certificate to gain administrator privileges to the target AD server.
 
-### Robert, a professional hacker, was performing a session hijacking attack on a target organization. In this process, he installed a tool on an Android device and connected it to the organization’s network to obtain the session IDs of active users on the Wi-Fi network. He used those session IDs to access a website as an authorized user.
-Which of the following tools did Robert employ in the above scenario?
+### Robert, a professional hacker, was performing a session hijacking attack on a target organization. In this process, he installed a tool on an Android device and connected it to the organization’s network to obtain the session IDs of active users on the Wi-Fi network. He used those session IDs to access a website as an authorized user. Which of the following tools did Robert employ in the above scenario?
 
 
 - Vega
