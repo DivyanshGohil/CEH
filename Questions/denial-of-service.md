@@ -163,3 +163,49 @@ Explanation:
 > **A10 Thunder TPS**: Is an appliance that ensures reliable access to key network services by detecting and blocking external threats such as DDoS and other cyber-attacks before they escalate into costly service outages
 
 > **Imperva Incapsula DDoS Protection**: Imperva Incapsula DDoS protection tool quickly mitigates attacks of any size without affecting legitimate traffic or increasing latency.
+
+
+
+
+### In which of the following techniques does the attacking host itself transfer the attack toolkit to a newly discovered vulnerable system, exactly when it breaks into that system?
+
+
+- Spyware propagation
+- **Autonomous propagation**
+- Back-chaining propagation
+- Central source propagation
+
+Explanation:
+
+
+>**Back-chaining Propagation: In this technique, the attacker places an attack toolkit on their own system, and a copy of the attack toolkit is transferred to a newly discovered vulnerable system. The attack tools installed on the attacking machine use some special methods to accept a connection from the compromised system and then transfer a file containing the attack tools to it.
+
+>**Autonomous Propagation: In autonomous propagation, the attacking host itself transfers the attack toolkit to a newly discovered vulnerable system, exactly at the time it breaks into that system.
+
+>**Central Source Propagation: In this technique, the attacker places an attack toolkit on a central source and a copy of the attack toolkit is transferred to a newly discovered vulnerable system. Once the attacker finds a vulnerable machine, they instruct the central source to transfer a copy of the attack toolkit to the newly compromised machine, on which attack tools are automatically installed under management by a scripting mechanism.
+
+>**Spyware Propagation: As its name implies, spyware is installed without user knowledge or consent, and this can be accomplished by “piggybacking” the spyware onto other applications.
+
+
+
+### Edwards, a professional hacker, has targeted a Linux server hosted on the target organization’s network. To achieve his goal, he initiated sending multiple specially crafted packets to the server with a malformed maximum segment size (MSS). This forced the server’s buffer to exceed its sustainable limit, which led to a DoS attack. Which of the following attacks did Edwards perform in the above scenario?
+
+
+- **TCP SACK panic attack**
+- Misconfigured AP attack
+- BlueBorne attack
+- Agent smith attack
+
+Explanation:
+
+    
+>**TCP SACK Panic Attack**: TCP Selective Acknowledgment (SACK) panic attack is a remote attack vector in which attackers attempt to crash the target Linux machine by sending SACK packets with malformed maximum segment size (MSS). To achieve this, attackers send specially designed SACK packets in sequence to the target server by setting the MSS to the lowest value (48 bytes). The lowest MSS value increases the number of TCP segments that need to be retransmitted. This selective retransmission causes the socket buffer of the target server to exceed the limit of 17 segments. Thus, the socket buffer exceeds the limit and triggers integer overflow, causing a kernel panic that leads to DoS.
+
+>**Misconfigured AP Attack**: Most organizations spend significant amounts of time defining and implementing Wi-Fi security policies, but it may be possible for a client of a wireless network to change the security settings of an AP unintentionally. This, in turn, may lead to misconfigurations in APs.
+
+>**Agent Smith Attack**: Agent Smith attacks are carried out by luring victims into downloading and installing malicious apps designed and published by attackers in the form of games, photo editors, or other attractive tools from third-party app stores such as 9Apps.
+
+>**BlueBorne Attack**: A BlueBorne attack is performed on Bluetooth connections to gain access to and take full control of the target device.
+
+
+

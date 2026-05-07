@@ -456,3 +456,59 @@ Explanation:
 >- Monitor firewall logs at regular intervals and investigate all suspicious log entries.
 >- By default, disable all FTP connections to or from the network.
 
+
+
+### Which of the following types of honeypots is very effective in determining the entire capabilities of adversaries and is mostly deployed in an isolated virtual environment along with a combination of vulnerable servers?
+
+
+- Spam honeypots
+- **Honeynets**
+- Spider honeypots
+- Malware honeypots
+
+Explanation:
+
+>**Malware honeypots**: Malware honeypots are used to trap malware campaigns or malware attempts over the network infrastructure. These honeypots are simulated with known vulnerabilities such as outdated APIs, vulnerable SMBv1 protocols, etc., and they also emulate different Trojans, viruses, and backdoors that encourage adversaries to perform exploitation activities
+
+>**Spam honeypots**: Spam honeypots specifically target spammers who abuse vulnerable resources such as open mail relays and open proxies. Basically, spam honeypots consist of mail servers that deliberately accept emails from any random source from the Internet
+
+>**Spider honeypots**: Spider honeypots are also called spider traps. These honeypots are specifically designed to trap web crawlers and spiders. Many threat actors perform web crawling and spidering to extract important information from web applications. Such crucial information includes URLs, contact details, directory details, etc
+
+>**Honeynets**   : Honeynets are networks of honeypots. They are very effective in determining the entire capabilities of the adversaries. Honeynets are mostly deployed in an isolated virtual environment along with a combination of vulnerable servers. The various TTPs employed by different attackers to enumerate and exploit networks will be recorded, and this information can be very effective in determining the complete capabilities of the adversary.
+
+
+
+
+### Check Point's FireWall-1 listens to which of the following TCP ports?
+
+
+- 1745
+- **259**
+- 1080
+- 1072
+
+Explanation:
+
+> Some firewalls will uniquely identify themselves using simple port scans. For example, Check Point's FireWall-1 listens on TCP ports 256, 257, 258, and 259, and Microsoft's Proxy Server usually listens on TCP ports 1080 and 1745.
+
+
+
+### Which of the following techniques allows attackers to leverage trusted in-built utilities for the execution of malicious codes to evade EDR solutions?
+
+
+- Distortion techniques
+- **Signed binary proxy execution**
+- Masking and filtering
+- Spawning using XMLDOM
+
+Explanation:
+
+>**Spawning using XMLDOM**: Attackers can also implement process spawning through XMLDOM. This technique allows attackers to download and run a code inside an Office process.
+
+>**Signed Binary Proxy Execution**: This technique allows attackers to leverage trusted in-built utilities for the execution of malicious codes to evade EDR solutions. Attackers use these legitimate or trusted utilities because they are signed with digital certificates and help in proxying the malicious code execution.
+
+>**Distortion Techniques**: In this technique, the user implements a sequence of modifications to the cover to obtain a stego-object.
+
+>**Masking and Filtering**: Masking and filtering techniques exploit the limitations of human vision, which is incapable of detecting slight changes in images.
+
+
