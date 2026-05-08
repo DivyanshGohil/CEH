@@ -373,3 +373,71 @@ Explanation:
 >- Maintain a proper tree-based lifecycle of JavaScript libraries to conduct deep analysis to check for any modifications.
 >- Enable the sub-resource integration feature to detect any modifications to the JavaScript code.
 >- Use JavaScript analyzers to analyze the code in client-side applications for any vulnerabilities or errors.
+
+
+
+
+### One of the following is a clickjacking technique in which an attacker creates an iframe of 1 × 1 pixels containing malicious content placed secretly under the mouse cursor. When the user clicks on this cursor, it will be registered on a malicious page. Which is this clickjacking technique?
+
+
+- Rapid content replacement
+- Click event dropping
+- Complete transparent overlay
+- **Hidden overlay**
+
+Explanation:
+
+>**Complete transparent overlay**: In this technique, the transparent, legitimate page or tool page is overlaid on the previously designed malicious page. Then, it is loaded into an invisible iframe and the higher z-index value is assigned for positioning it on top.
+
+>**Hidden overlay**: In this technique, the attacker creates an iframe of 1×1 pixels containing malicious content placed secretly under the mouse cursor. When the user clicks on this cursor, it will be registered on the malicious page although the malicious content is concealed by the cursor.
+
+>**Click event dropping**: This technique can completely hide a malicious page behind a legitimate page. It can also be used to set the CSS pointer-events property of the top to none. This can cause click events to “drop” through the legitimate masked page and registers only the malicious page.
+
+>**Rapid content replacement**: In this technique, the targeted controls are covered by opaque overlays that are removed only for a moment for registering a click. An attacker using this technique needs to accurately predict the time taken by the victim to click on the web page.
+
+
+
+### Which of the following tools allows attackers to gain remote control over the target web servers and manipulate the files and databases?
+
+
+- SearchDiggity
+- CyberX
+- CRITIFENCE
+- China chopper
+
+Explanation:
+
+>**CRITIFENCE**: CRITIFENCE is an online database that stores default passwords of critical infrastructure, SCADA, ICS, and the IIoT. Attackers can use this online tool to discover the default credentials of a device or product simply by entering the device name or its manufacturer’s name.
+
+>**China chopper**: Attackers use various web shell tools such as WSO PHP Webshell, b374k, C99, China chopper, R57, and WSO (web shell by oRb) to gain remote control over target web servers.
+
+>**SearchDiggity**: SearchDiggity is the primary attack tool of the Google Hacking Diggity Project. It consists of a set of tools including GoogleDiggity, BingDiggity, Bing LinkFromDomainDiggity, etc.
+
+>**CyberX**: The CyberX platform performs a vulnerability assessment on an IoT and ICS environment and returns an objective risk score. It identifies all IoT and ICS assets connected to the target network. It enumerates device-level vulnerabilities such as missing patches, weak passwords, unused open ports, remote access ports, etc.
+
+
+
+### Which of the following practices can make web applications vulnerable to command injection attacks?
+
+
+- Implement the least privileges to restrict the permissions to execute OS commands
+- Use parameterized SQL queries
+- Use language-specific libraries that avoid problems because of shell commands
+- Avoid enumerating the authorized values within a conditional statement
+
+Explanation:
+
+>Some countermeasures against command injection flaws are as follows:
+>- Use language-specific libraries that avoid problems due to shell commands.
+>- Use parameterized SQL queries.
+>- Implement the least privileges to restrict the permissions to execute the OS commands.
+>- Avoid executing commands such as exec or system without proper validation and sanitization.
+>- Prevent the shell interpreter using pcntl_fork and pcntl_exec within the PHP.
+>- Implement Python as a web framework instead of PHP for application development.
+>- Scan the applications with a dynamic web vulnerability scanner to prevent code injection.
+>- Enumerate the authorized values within a conditional statement.
+
+
+
+
+
