@@ -408,8 +408,11 @@ Explanation:
 Explanation:
 
 >**Meltdown vulnerability**: This is found in all the Intel processors and ARM processors deployed by Apple. This vulnerability leads to tricking a process to access out-of-bounds memory by exploiting CPU optimization mechanisms such as speculative execution.
+
 >**Dylib hijacking**: This allows an attacker to inject a malicious dylib in one of the primary directories and simply load the malicious dylib at runtime.
+
 >**Spectre vulnerability**: Spectre vulnerability is found in many modern processors such as AMD, ARM, Intel, Samsung, and Qualcomm processors. This vulnerability leads to tricking a processor to exploit speculative execution to read restricted data. The modern processors implement speculative execution to predict the future and to complete the execution faster.
+
 >**DLL hijacking**: In DLL hijacking attackers place a malicious DLL in the application directory; the application will execute the malicious DLL in place of the real DLL.
 
 
@@ -425,8 +428,11 @@ Explanation:
 Explanation:
 
 >**Boot Loader Level Rootkit**: Replaces the original boot loader with the one controlled by a remote attacker.
+
 >**Hardware/Firmware Rootkit**: Hides in hardware devices or platform firmware that are not inspected for code integrity.
+
 >**Hypervisor Level Rootkit**: Acts as a hypervisor and modifies the boot sequence of the computer system to load the host operating system as a virtual machine.
+
 >**Library Level Rootkit**: Replaces the original system calls with fake ones to hide information about the attacker.
 
 
@@ -501,5 +507,82 @@ Explanation:
 
 
 
+### George, a professional hacker, targeted an organization’s server to sniff the data and files passing through the server. For this purpose, he initially gained access to a low-privilege user account. Then, he exploited a misconfiguration in a communication protocol that uses port 2049 to gain root-level access to a remote server. Which of the following privilege escalation techniques did George exploit in the above scenario?
 
+
+- Privilege escalation using DLL hijacking
+- Privilege escalation using Windows sticky keys
+- **Privilege escalation using network file system**
+- Privilege escalation by bypassing user account control (UAC)
+
+Explanation:
+
+> **Privilege Escalation Using Network File System (NFS)**: Attackers often attempt to enumerate misconfigurations in the Network File System (NFS) to exploit and gain root-level access to a remote server. NFS is a protocol used to share and access data and files over a secured intranet. It uses port 2049 to provide communication between a client and server through the Remote Procedure Call (RPC). A misconfigured NFS paves the way for attackers to gain root-level access through a regular user account or low-privilege user.
+
+> **Privilege Escalation Using Windows Sticky keys**: In Windows, the sticky keys feature allows users to use a combination of keys including Ctrl, Alt, and Shift instead of pressing three keys simultaneously. Attackers exploit this feature to perform privilege escalation.
+
+> **Privilege Escalation by Bypassing User Account Control (UAC)**: When attackers fail to escalate privileges using a simple payload, they attempt to evade Windows security features such as UAC and to gain system-level access.
+
+> **Privilege escalation Using DLL Hijacking**: Most Windows applications do not use the fully qualified path when loading an external DLL library; instead, they first search the directory from which they have been loaded. Taking this as an advantage, if attackers can place a malicious DLL in the application directory, the application will execute the malicious DLL in place of the real DLL.
+
+
+
+
+
+### Cooper, a professional hacker, managed to gain unauthorized access to a target system. To escalate privileges and maintain persistence, he created a new process via the CreateProcess API by abusing system processes such as svchost.exe. Consequently, Cooper bypassed security mechanisms that restrict process spawning from a root process and escalated privileges. Which of the following techniques did Cooper implement to escalate privileges in the above scenario?
+
+
+- SID-History injection
+- Access token manipulation
+- **Parent PID spoofing**
+- Abusing SUID and SGID permissions
+
+Explanation:
+
+>**SID-History Injection**: Attackers abuse Windows Security Identifier (SID) feature to inject the SID value of an administrator or equivalent account containing higher privileges into the compromised user account’s SID-history attribute.
+
+>**Abusing SUID and SGID permissions**: Set User Identification (SUID) and Set Group Identification (SGID) are access permissions given to a program file in UNIX-based systems. In Linux, there are some commands and binaries that can be executed by the attackers to elevate their privileges from non-root users to root users, if flags of SUID and SGID rights are set.
+
+>**Parent PID Spoofing**: Attackers attempt to bypass the internal process or service that tracks security measures and to escalate privileges by spoofing the parent process ID (PPID) of a recently added process. These new processes are derived directly from their parent if they are not specified precisely. An explicit specification can be made by providing a PPID for the new process via the CreateProcess API. Usually, this API call process consists of specific arguments to determine the particular PPID to be used. The appropriate PPID can be set to the process that is derived from the system through system processes such as svchost.exe or consent.exe using Windows User Account Control (UAC).
+
+>**Access token manipulation**: In Windows OSs, access tokens are used to determine the security context of a process or thread. Windows administrators have to log on as normal users and need to run their tools with admin privileges using token manipulation command “runas.” Attackers can exploit this to access the tokens of other users, or generate spoofed tokens, to escalate privileges and perform malicious activities while evading detection.
+
+
+
+
+### Malcolm, a professional hacker, targeted a Windows-based system to gain backdoor access. For this purpose, he escalated privileges by replacing the Windows App switcher accessibility feature with cmd.exe to gain backdoor access when a key combination is pressed at the login screen. Identify the Windows accessibility feature exploited by Malcolm in the above scenario.
+
+
+- C:\Windows\System32\sethc.exe
+- **C:\Windows\System32\AtBroker.exe**
+- C:\Windows\System32\Magnify.exe
+- C:\Windows\System32\osk.exe
+
+Explanation:
+
+> In a Windows environment, accessibility features are stored at the location C:\Windows\System32\ and can be launched by pressing specific keys during a system reboot. Attackers gain escalated privileges by replacing one of the accessibility features with cmd.exe or by replacing binaries in the registry to gain backdoor access when a key combination is pressed at the login screen. This technique allows attackers to obtain system-level access.
+
+> The following are accessibility features abused by attackers:
+
+![IMAGE](image/system5.png)
+
+
+
+### Which of the following is sophisticated malware that targets Windows machines, spreads its infection from one machine to another, and is distributed via a fake malicious Telegram installer?
+
+
+- **Purple Fox rootkit**
+- njRAT
+- Necurs
+- PoisonIvy
+
+Explanation:
+
+>**njRAT**: njRAT is a RAT with powerful data-stealing capabilities. In addition to logging keystrokes, it can access a victim's camera, stealing credentials stored in browsers, uploading and downloading files, performing process and file manipulations, and viewing the victim's desktop.
+
+>**PoisonIvy**: PoisonIvy gives the attacker practically complete control over the infected computer. The PoisonIvy remote administration tool is created and controlled by a PoisonIvy management program or kit. The PoisonIvy kit consists of a graphical user interface, and the backdoors are small (typically, <10 kB).
+
+>**Necurs**: The Necurs botnet is a distributor of many pieces of malware, most notably Dridex and Locky. It delivers some of the worst banking Trojans and ransomware threats in batches of millions of emails at a time, and it keeps reinventing itself. Necurs is distributed by spam e-mails and downloadable content from questionable/illegal sites. It is indirectly responsible for a significant portion of cyber-crime.
+
+>**Purple Fox Rootkit**: The Purple Fox rootkit enables attackers to conceal malware on targeted devices, making it difficult for security solutions to detect and remove the malware. It is a sophisticated malware attack that targets Windows machines and spreads its infection from one machine to another. The Purple Fox rootkit can be distributed via a fake malicious Telegram installer.
 
